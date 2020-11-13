@@ -1,0 +1,37 @@
+body{
+    font-family: 'Roboto', sans-serif;
+}
+navbar{
+    position: fixed;
+    top: 0;
+    z-index: 10;
+
+    width: 100%;
+    height: 60px;
+    background: red;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+navbar div{
+    margin: 10px 40px;
+    cursor: pointer;
+}
+.principal{
+    width: 100%;
+    height: 100vh;
+}
+.principal-img{
+    width: 100%;
+    height: 100%;
+}
+.principal-texto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    background: orangered;
+    color: white;
+}
