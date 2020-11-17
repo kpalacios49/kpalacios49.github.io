@@ -6,7 +6,6 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
@@ -17,8 +16,9 @@
 </head>
 <body>
 <header>
-    <div><i class="fas fa-bars"></i></div>
-    <div>Español</div>
+    <div id="hamburguer"></div>
+
+    <div>English</div>
     <nav class="d-none menu">
         <ul>
             <li><a href="#">Inicio</a></li>
@@ -28,21 +28,27 @@
     </nav>
 </header>
 <section class="row principal no-gutters">
-    <div class="col-4 principal-texto">
-        <h1 class="display-4">Soy kevin</h1>
-        <p class="m-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos dolore eius expedita itaque nostrum, odio quas sit suscipit! Aspernatur consectetur doloremque ducimus excepturi, impedit ipsam maiores qui sunt velit veniam.</p>
-        <button class="btn btn-success">Contactarme</button>
+    <div class="col-12 principal-texto">
+        <h1>Hey! I am kevin</h1>
+        <h1 >I build epic websites that runs across platforms & devices</h1>
+        <div id="scrollDown"></div>
     </div>
-    <div class="col-8">
+<!--    <div class="col-8">
         <img class="principal-img" src="resources/images/image.jpg" alt="">
-
-    </div>
+    </div>-->
 </section>
+<hr>
+
 <section>Sobre mí</section>
 <section>Experiencias</section>
 <section>Trabajos</section>
 <section>Contacto</section>
 
+
 </body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.6.4/lottie_svg.min.js"></script>
+<script src="resources/lottie.js"></script>
+
+
 <script src="resources/app.js"></script>
 </html>
