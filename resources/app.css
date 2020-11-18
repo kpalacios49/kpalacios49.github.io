@@ -95,12 +95,12 @@ hr{
     width: 100%;
     height: 100vh;
     background-color: orangered;
-    background-image: linear-gradient(to right, #FFDB2F, #F4FA03);
+    background-image: linear-gradient(to right, #fad214, #F4FA03);
 }
 .principal #scrollDownContainer{
     position: absolute;
     bottom: 10px;
-    left: 50%;
+    left: calc(50% - 25px);
     width: 50px;
 }
 
@@ -113,7 +113,8 @@ hr{
     color: #0E0E0E;
 }
 section{
-    height:500px;
+    min-height:500px;
+    padding: 100px 50px;
 }
 .disappear{
     left: -100%;
@@ -138,4 +139,167 @@ section{
     background: #555;
 }
 
+/*//////////////////////// card /////////////////////////////*/
+
+
+* {
+    box-sizing: border-box;
+}
+
+.proyect-card {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem auto;
+    box-shadow: 0 3px 7px -1px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1.6%;
+    background: #fff;
+    line-height: 1.4;
+    border-radius: 5px;
+    overflow: hidden;
+    z-index: 0;
+}
+.proyect-card a {
+    color: inherit;
+}
+.proyect-card a:hover {
+    color: #fad214;
+}
+.proyect-card:hover .photo {
+    transform: scale(1.3) rotate(3deg);
+}
+.proyect-card .meta {
+    position: relative;
+    z-index: 0;
+    height: 200px;
+}
+.proyect-card .photo {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.2s;
+}
+.proyect-card .details, .proyect-card .details ul {
+    margin: auto;
+    padding: 0;
+    list-style: none;
+}
+.proyect-card .details {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -100%;
+    margin: auto;
+    transition: left 0.2s;
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    padding: 10px;
+    width: 100%;
+    font-size: 0.9rem;
+}
+.proyect-card .details a {
+    text-decoration: dotted underline;
+}
+.proyect-card .details ul li {
+    display: inline-block;
+}
+
+.proyect-card .description {
+    padding: 1rem;
+    background: #fff;
+    position: relative;
+    z-index: 1;
+}
+.proyect-card .description h1, .proyect-card .description h2 {
+    font-family: Poppins, sans-serif;
+}
+.proyect-card .description h1 {
+    line-height: 1;
+    margin: 0;
+    font-size: 1.7rem;
+}
+.proyect-card .description h2 {
+    font-size: 1rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: #a2a2a2;
+    margin-top: 5px;
+}
+.proyect-card .description .read-more {
+    text-align: right;
+}
+.proyect-card .description .read-more a {
+    color: #fad214;
+    display: inline-block;
+    position: relative;
+}
+.proyect-card .description .read-more a:after {
+    content: "\f061";
+    margin-left: -10px;
+    opacity: 0;
+    vertical-align: middle;
+    transition: margin 0.3s, opacity 0.3s;
+}
+.proyect-card .description .read-more a:hover:after {
+    margin-left: 5px;
+    opacity: 1;
+}
+.proyect-card p {
+    position: relative;
+    margin: 1rem 0 0;
+}
+.proyect-card p:first-of-type {
+    margin-top: 1.25rem;
+}
+.proyect-card p:first-of-type:before {
+    content: "";
+    position: absolute;
+    height: 5px;
+    background: #fad214;
+    width: 35px;
+    top: -0.75rem;
+    border-radius: 3px;
+}
+.proyect-card:hover .details {
+    left: 0%;
+}
+@media (min-width: 640px) {
+    .proyect-card {
+        flex-direction: row;
+        max-width: 1000px;
+        height: 300px;
+    }
+    .proyect-card .meta {
+        flex-basis: 40%;
+        height: auto;
+    }
+    .proyect-card .description {
+        flex-basis: 60%;
+    }
+    .proyect-card .description:before {
+        transform: skewX(-3deg);
+        content: "";
+        background: #fff;
+        width: 30px;
+        position: absolute;
+        left: -10px;
+        top: 0;
+        bottom: 0;
+        z-index: -1;
+    }
+    .proyect-card.alt {
+        flex-direction: row-reverse;
+    }
+    .proyect-card.alt .description:before {
+        left: inherit;
+        right: -10px;
+        transform: skew(3deg);
+    }
+    .proyect-card.alt .details {
+        padding-left: 25px;
+    }
+}
 
