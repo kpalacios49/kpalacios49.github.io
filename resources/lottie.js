@@ -1,3 +1,5 @@
+let menu_left = document.querySelector('#menu');
+
 let scrollDown = bodymovin.loadAnimation({
     container: document.getElementById("scrollDown"),
     rendered: 'svg',
@@ -6,6 +8,9 @@ let scrollDown = bodymovin.loadAnimation({
     path: 'resources/images/scrollDown.json'
 })
 scrollDown.setSpeed(1.5)
+scrollDown.addEventListener("click",function (){
+
+})
 
 let menu = bodymovin.loadAnimation({
     container: document.getElementById("hamburguer"),
@@ -17,6 +22,13 @@ let menu = bodymovin.loadAnimation({
 })
 let menu_activated = true;
 document.getElementById("hamburguer").addEventListener('click',function(){
+    if (menu_left.classList.contains("disappear")){
+        menu_left.classList.remove("disappear")
+    }
+    else {
+        menu_left.classList.add("disappear")
+    }
+
     if (menu_activated){
         menu_activated = false;
         menu.setDirection(1); menu.play();
