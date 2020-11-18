@@ -38,6 +38,14 @@ document.getElementById("hamburguer").addEventListener('click',function(){
         menu.setDirection(-1); menu.play();
     }
 })
+menu_left.querySelectorAll("a").forEach((elem)=>{
+    elem.addEventListener("click",(e)=>{
+        menu_activated = true;
+        menu.setDirection(-1);
+        menu.play();
+        menu_left.classList.add("disappear")
+    })
+})
 
 
 
