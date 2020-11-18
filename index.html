@@ -12,13 +12,14 @@
 
     <link rel="stylesheet" href="resources/normalize.css">
     <link rel="stylesheet" href="resources/app.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
 <header>
     <div id="hamburguer"></div>
 
     <div>English</div>
-    <nav class="disappear menu" id="menu">
+    <nav class="disappear menu col-6 col-sm-12 col-md-6 col-lg-3" id="menu">
         <ul>
             <li><a href="#landing">Inicio</a></li>
             <li><a href="#proyects">Proyects</a></li>
@@ -28,33 +29,42 @@
         </ul>
     </nav>
 </header>
-<section id="landing" class="row principal no-gutters">
-    <div class="col-12 principal-text">
-        <h1 class="line-1 anim-typewriter">Hey! I am kevin</h1>
-        <h1 >I build epic websites that runs across platforms & devices</h1>
-<!--        <p class="line-1 anim-typewriter">Animation typewriter style using css steps()</p>-->
-        <a href="#proyects">
-            <div class="mt-5" id="scrollDown"></div>
-        </a>
+<section id="landing" class="principal d-flex justify-content-center align-items-center no-gutters">
+    <div class="col-6 principal-text" >
+        <h1 data-aos="fade-right">Hey! I am kevin</h1>
+        <h1 data-aos="fade-right">I build epic websites that runs across platforms & devices</h1>
     </div>
-<!--    <div class="col-8">
-        <img class="principal-img" src="resources/images/image.jpg" alt="">
-    </div>-->
+    <a href="#proyects" data-aos="fade-up" id="scrollDownContainer"><div class="mt-5" id="scrollDown"></div></a>
+
 </section>
 <hr>
-<section id="proyects">Proyects</section>
+<section id="proyects">
+    <h2 class="m-4">Proyects</h2>
+    <ul>
+        <li>Case study or real life proyect</li>
+        <li>image</li>
+        <li>title</li>
+        <li>Short description</li>
+        <li>Link to the proyect</li>
+    </ul>
+</section>
 <hr>
-<section id="aboutme">About me</section>
+<section id="aboutme">
+    <h2 class="m-4">About me</h2>
+</section>
 <hr>
-<section id="contact">Contact</section>
+<section id="contact">
+    <h2 class="m-4">Contact</h2>
+</section>
 <hr>
-<section id="training">Training</section>
+<section id="training">
+    <h2 class="m-4">Training</h2>
+</section>
 
 
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.6.4/lottie_svg.min.js"></script>
 <script src="resources/lottie.js"></script>
-
-
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script src="resources/app.js"></script>
 </html>

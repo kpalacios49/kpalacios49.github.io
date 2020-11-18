@@ -45,7 +45,6 @@ hr{
     left: 0;
     background: white;
     height: 100vh;
-    width: 300px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -63,32 +62,27 @@ hr{
 }
 
 .principal{
+    position: relative;
     width: 100%;
     height: 100vh;
     background-color: orangered;
     background-image: linear-gradient(to right, #FFDB2F, #F4FA03);
 }
-.principal #scrollDown{
+.principal #scrollDownContainer{
+    position: absolute;
+    bottom: 100px;
+    left: 50%;
     width: 50px;
 }
-.principal-img{
-    width: 100%;
-    height: 100%;
-}
-.principal-text{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
 
-/*    background-image: url("../resources/images/image.jpg");
-    background-size: cover;*/
+.principal-text{
+    height: 100px!important;
     font-size: 1.3em;
 }
 .principal-text h1{
-    width: 40%;
     text-align: left;
     color: #0E0E0E;
+    height: 50px;
 }
 section{
     height:500px;
@@ -96,8 +90,6 @@ section{
 .disappear{
     left: -100%;
 }
-
-
 
 
 
@@ -118,32 +110,4 @@ section{
     background: #555;
 }
 
-/*//////////////////////// typewriter effect /////////////////////////////*/
 
-
-.line-1{
-    position: relative;
-    width: 24em;
-    margin: 0 auto;
-    border-right: 2px solid rgba(255,255,255,.75);
-    font-size: 180%;
-    text-align: center;
-    white-space: nowrap;
-    overflow: hidden;
-    transform: translateY(-50%);
-}
-
-/* Animation */
-.anim-typewriter{
-    animation: typewriter 4s steps(44) 1s 1 normal both,
-    blinkTextCursor 700ms steps(44) infinite normal;
-}
-@keyframes typewriter{
-    from{width: 0;}
-    to{width: 24em;}
-}
-@keyframes blinkTextCursor{
-    /*from{border-right-color: rgba(255,255,255,.75);}*/
-    from{border-right-color: rgba(0,0,0);}
-    to{border-right-color: transparent;}
-}
