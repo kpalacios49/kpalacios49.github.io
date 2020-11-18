@@ -1,3 +1,32 @@
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    h1{
+        font-size: 1em;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    h1{
+        font-size: 2em;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -70,7 +99,7 @@ hr{
 }
 .principal #scrollDownContainer{
     position: absolute;
-    bottom: 100px;
+    bottom: 10px;
     left: 50%;
     width: 50px;
 }
@@ -82,7 +111,6 @@ hr{
 .principal-text h1{
     text-align: left;
     color: #0E0E0E;
-    height: 50px;
 }
 section{
     height:500px;
