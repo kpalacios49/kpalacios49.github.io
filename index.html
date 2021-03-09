@@ -1,230 +1,232 @@
 <!doctype html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <link rel="stylesheet" href="resources/normalize.css">
     <link rel="stylesheet" href="resources/app.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
+
 <body id="touchsurface">
-<header>
-    <div id="hamburguer"></div>
+    <header>
+        <div class="btn btn-orange rounded-circle p-2" id="hamburguer"></div>
 
-    <div>English</div>
-    <nav class="disappear menu col-11 col-sm-11 col-md-6 col-lg-3" id="menu">
-        <ul>
-            <li><a href="#landing">Inicio</a></li>
-            <li><a href="#proyects">Proyects</a></li>
-            <li><a href="#aboutme">About me</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-</header>
-<section id="landing" class="principal d-flex justify-content-center align-items-center no-gutters">
-    <div class="col-11 col-sm-11 col-md-8 col-lg-6 principal-text" >
-        <h1 data-aos="fade-right">Hey! I am kevin</h1>
-        <h1 data-aos="fade-right">I build epic websites that runs across platforms & devices</h1>
-    </div>
-    <a href="#proyects" id="scrollDownContainer"><div class="mt-5" id="scrollDown"></div></a>
-    <div class="d-none d-md-block shapes">
-        <div class="shape-container">
-            <div class="shape"></div>
+        <!-- <div>Español</div> -->
+        <nav class="disappear menu col-11 col-sm-11 col-md-6 col-lg-3" id="menu">
+            <ul>
+                <li><a href="#landing">Inicio</a></li>
+                <li><a href="#proyects">Proyectos</a></li>
+                <li><a href="#aboutme">Sobre mí</a></li>
+                <li><a href="#skills">Habilidades</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="landing" class="principal d-flex justify-content-center align-items-center no-gutters">
+        <div class="col-12 p-2  principal-text">
+            <h4 data-aos="fade-right">Hola!, Soy kevin.</h4>
+            <h1 data-aos="fade-right"><strong>Desarrollador <span class="underline">Web Full-Stack</span></strong></h1>
         </div>
-        <div class="shape-container">
-            <div class="shape"></div>
-        </div>
-    </div>
-</section>
-<section id="proyects">
-
-    <h2 class="h1 m-4">Proyects</h2>
-    <hr style="border:1px solid  #fad214">
-    <div class="card-container">
-
-        <div class="proyect-card" data-aos="fade-right">
-            <div class="meta">
-                <div class="photo" style="background-image: url(https://images.pexels.com/photos/5542628/pexels-photo-5542628.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260)"></div>
-                <ul class="details">
-                    <li class="author"><a href="#">Impulsarme.com</a></li>
-                    <li class="date">Proyect</li>
-                </ul>
-            </div>
-            <div class="description">
-                <h1>Impulsarme</h1>
-                <h2>Case Study</h2>
-                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus animi culpa maiores quae velit. Accusantium iusto mollitia quidem. Aliquid animi autem expedita, explicabo facilis incidunt qui quia sint sit sunt.</p>
-                <p class="read-more">
-                    <a href="#">Read more</a>
-                </p>
+        <a href="#proyects" id="scrollDownContainer">
+            <div class="mt-5" id="scrollDown"></div>
+        </a>
+        <div class="shapes">
+            <div class="shape-container">
+                <div class="shape"></div>
             </div>
         </div>
-        <div class="proyect-card alt" data-aos="fade-right">
-            <div class="meta">
-                <div class="photo" style="background-image: url(https://images.pexels.com/photos/3378993/pexels-photo-3378993.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260)"></div>
-                <ul class="details">
-                    <li class="author"><a href="#">Lorem</a></li>
-                    <li class="date">2020</li>
-                    <li class="tags">
-                        <ul>
-                            <li><a href="#">Learn</a></li>
-                            <li><a href="#">Code</a></li>
-                            <li><a href="#">JavaScript</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-            <div class="description">
-                <h1>Lorem Ipsum</h1>
-                <h2>Pre description</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad eum dolorum architecto obcaecati enim dicta praesentium, quam nobis! Neque ad aliquam facilis numquam. Veritatis, sit.</p>
-                <p class="read-more">
-                    <a href="#">Read More</a>
-                </p>
-            </div>
-        </div>
-    </div>
+    </section>
+    <section id="proyects">
 
+        <span class="h1 mx-4 my-5 topic project-topic">Proyectos</span>
+        <div class="card-container">
 
-</section>
-<section id="aboutme" data-aos="fade-up">
-    <div class="row">
-        <div class="col-12 col-md-6  order-2 order-md-1">
-            <h2 class="h1 m-4">About me</h2>
-            <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, aspernatur commodi consequatur eos
-                expedita explicabo fuga fugiat natus pariatur quaerat quas quibusdam similique totam. Beatae doloribus
-                ea eos maxime tempore?
-            </div>
-            <div>Architecto consectetur itaque non placeat rerum. Architecto, blanditiis cumque, dolorem doloribus
-                ducimus esse exercitationem illum inventore laborum minus modi molestias nesciunt nihil officia optio
-                provident quasi quis vel vero voluptatem.
-            </div>
-            <div>Aperiam error ipsam iusto qui quibusdam quod repellendus rerum sunt. Adipisci aspernatur delectus
-                excepturi facilis in iusto magni nemo neque nihil odit officia, possimus praesentium quisquam saepe ut
-                vero voluptate?
-            </div>
-            <!--            <p class="m-3">-->
-            <!--                I´m a student of 3rd grade in system engineer and I become a passionate developer when i started to feel the sensation of coding, right now I'm-->
-            <!--                capable of building an entire website with my Full stack abilities. But this does not end there, I'm constantly learning and searching new technologies-->
-            <!--                and adapting to the market, my next step is to learn mobile developing.-->
-            <!--                so I'm currently seeking for full-time job positions or some freelance collaborations.-->
-            <!--            </p>-->
-            <!--            <p>If you have an job offer, a project proposal, or just want to say hi please contact me at nnnnnn@nnnn.com</p>-->
-            <button type="button" class="btn btn-warning m-4">Download CV <img class="image-download" src="resources/images/down-arrow.svg" alt="download"></button>
-        </div>
-        <div class="col-12 col-md-6 order-1 order-md-2 d-flex justify-content-center align-items-center">
-            <div style="position: relative">
-                <div class="aboutme-img">
-                    <img src="https://images.pexels.com/photos/3378993/pexels-photo-3378993.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260)" alt="">
+            <div class="proyect-card" data-aos="fade-right" data-bs-toggle="modal" data-bs-target="#juegoMemoriaModal">
+                <div class="meta">
+                    <div class="photo"
+                        style="background-image: url(https://images.pexels.com/photos/5542628/pexels-photo-5542628.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260)">
+                    </div>
+                </div>
+                <div class="description">
+                    <h1><strong>Juego De Memoria</strong></h1>
+                    <h2 class="mt-3">Caso de estudio</h2>
+                    <p class="my-3"> Clasico juego de memoria que consta de un tablero donde todas las cartas estan
+                        dadas vuelta, el rol del jugador es
+                        ir eligiendo cartas y combinar aquellas cartas que son iguales en la menor cantidad de intentos
+                        posible.
+                    </p>
+                    <div class="d-flex align-items-center">
+                        <div class="skill-img">
+                            <img height="100" src="./resources/images/react-icon.png" alt="">
+                        </div>
+                        <div class="skill-img">
+                            <img height="35" src="./resources/images/firebase-icon.png" alt="">
+                        </div>
+                    </div>
+                    <p class="read-more">
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#juegoMemoriaModal"><b>Leer más</b></a>
+                    </p>
                 </div>
             </div>
-        </div>
-    </div>
-</section>
 
-<div class="change-style">
-    <svg data-aos="fade-up" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><defs><linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" style="stop-color:#fad214;stop-opacity:1" /><stop offset="100%" style="stop-color:#F4FA03;stop-opacity:1" /></linearGradient></defs><path fill="url(#grad1)"  fill-opacity="1" d="M0,96L0,160L180,160L180,0L360,0L360,64L540,64L540,160L720,160L720,128L900,128L900,0L1080,0L1080,160L1260,160L1260,256L1440,256L1440,0L1260,0L1260,0L1080,0L1080,0L900,0L900,0L720,0L720,0L540,0L540,0L360,0L360,0L180,0L180,0L0,0L0,0Z"></path></svg>
-
-    <section id="skills">
-        <h2 class="h1 m-4">Skills</h2>
-        <div class="container">
-            <div class="skill-card">
-                <header class="skill-card_header"><img class="skill-card_icon" src="https://upload.wikimedia.org/wikipedia/commons/3/38/HTML5_Badge.svg" alt="HTML5 Logo" /></header>
-                <div class="skill-card_body">
-                    <h2 class="skill-card_title">html</h2><span class="skill-card_duration">6 ans d'expérience</span>
-                    <ul class="skill-card_knowledge">
-                        <li>HTML5</li>
-                        <li>Sémantique</li>
-                        <li>SVG</li>
-                        <li>Canvas</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="skill-card">
-                <header class="skill-card_header"><img class="skill-card_icon" src="https://upload.wikimedia.org/wikipedia/commons/3/38/HTML5_Badge.svg" alt="HTML5 Logo" /></header>
-                <div class="skill-card_body">
-                    <h2 class="skill-card_title">html</h2><span class="skill-card_duration">6 ans d'expérience</span>
-                    <ul class="skill-card_knowledge">
-                        <li>HTML5</li>
-                        <li>Sémantique</li>
-                        <li>SVG</li>
-                        <li>Canvas</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="skill-card">
-                <header class="skill-card_header"><img class="skill-card_icon" src="https://upload.wikimedia.org/wikipedia/commons/3/38/HTML5_Badge.svg" alt="HTML5 Logo" /></header>
-                <div class="skill-card_body">
-                    <h2 class="skill-card_title">html</h2><span class="skill-card_duration">6 ans d'expérience</span>
-                    <ul class="skill-card_knowledge">
-                        <li>HTML5</li>
-                        <li>Sémantique</li>
-                        <li>SVG</li>
-                        <li>Canvas</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="skill-card">
-                <header class="skill-card_header"><img class="skill-card_icon" src="https://upload.wikimedia.org/wikipedia/commons/3/38/HTML5_Badge.svg" alt="HTML5 Logo" /></header>
-                <div class="skill-card_body">
-                    <h2 class="skill-card_title">html</h2><span class="skill-card_duration">6 ans d'expérience</span>
-                    <ul class="skill-card_knowledge">
-                        <li>HTML5</li>
-                        <li>Sémantique</li>
-                        <li>SVG</li>
-                        <li>Canvas</li>
-                    </ul>
-                </div>
-            </div>
         </div>
 
 
     </section>
-    <hr>
-    <section id="contact">
-        <h2 class="h1 m-4">Contact</h2>
-        <div class="d-flex flex-column justify-content-center align-items-center ">
-            <div class="col-12 col-md-6">
-                <div class="form-group">
-                    <label for="usr">Name:</label>
-                    <input type="text" class="form-control" id="usr">
+    <section id="aboutme" data-aos="fade-up">
+        <div class="row">
+            <div class="col-12 col-md-6  order-2 order-md-1">
+                <h2 class="h1 m-4 text-center text-md-left topic aboutme-topic">Sobre mí</h2>
+                <div class="mt-4 p-4 aboutme-text">
+                    Estudiante de Ingeniería en sistemas, apasionado por la programación con más de 2 años de
+                    experiencia en el sector desarrollando aplicaciones web para una empresa, busco constantemente mi
+                    crecimiento profesional y nuevos desafíos, adaptándome a las nuevas tecnologías que demanda el
+                    mercado con una gran habilidad para el trabajo en equipo desenvolviéndome en un entorno orientado a
+                    resultados.
                 </div>
-                <div class="form-group">
-                    <label for="pwd">Email adress:</label>
-                    <input type="password" class="form-control" id="pwd">
+                <button type="button" class="btn btn-purple m-4" style="float:right">Descargá mi CV </button>
+            </div>
+            <div class="col-12 col-md-6 order-1 order-md-2 d-flex justify-content-center align-items-center">
+                <div style="position: relative">
+                    <div class="aboutme-img">
+                        <img src="./resources/images/foto.jpg" alt="foto_perfil">
+                    </div>
                 </div>
-                <div class="form-group">
-                    <label for="message">Write a message:</label>
-                    <textarea class="form-control" rows="10" id="message"></textarea>
-                </div>
-                <button type="button" class="btn btn-danger">Send</button>
             </div>
         </div>
-
     </section>
-    <section id="training">
-        <h2 class="h1 m-4">Training</h2>
+
+        <section id="skills">
+            <h2 class="h1 topic skills-topic" style="margin-bottom: 80px;">Habilidades</h2>
+            <br>
+            <div class="skill-img">
+                <img height="180" src="./resources/images/react-icon.png" alt="">
+            </div>
+            <!-- <div class="skill-img">
+                <img class="img-icon" src="./resources/images/redux-icon.png" alt="">
+            </div> -->
+            <div class="skill-img">
+                <img height="50" src="./resources/images/nodejs-icon.svg" alt="">
+            </div>
+            <!-- <div class="skill-img">
+                <img class="img-icon" src="./resources/images/express-icon.png" alt="">
+            </div> -->
+            <div class="skill-img">
+                <img class="img-icon" src="./resources/images/laravel-icon.png" alt="">
+            </div>
+            <div class="skill-img">
+                <img class="img-icon" src="./resources/images/livewire-icon.png" alt="">
+            </div>
+            <div class="skill-img">
+                <img class="img-icon" src="./resources/images/git-icon.png" alt="">
+            </div>
+            <div class="skill-img">
+                <img class="img-icon" src="./resources/images/php-icon.png" alt="">
+            </div>
+            <div class="skill-img">
+                <img class="img-icon" src="./resources/images/sql-icon.png" alt="">
+            </div>
+            <div class="skill-img">
+                <img class="img-icon" src="./resources/images/mysql-icon.png" alt="">
+            </div>
+            <div class="skill-img">
+                <img class="img-icon" src="./resources/images/web-icon.jpg" alt="">
+            </div>
+
+        </section>
+        <hr>
+
+        <section id="training pb-0">
+            <h2 class="h1 m-4 topic training-topic">Educación</h2>
+
+            <div class="line">
+                <div class="line-content">
+
+                    <div class="content">
+                        <h1>Ingeniería En Sistemas De Información</h1>
+                        <p class="text-muted">2016 - En curso / Universidad Tecnologica Nacional</p>
+                    </div>
+
+                    <div class="content">
+                        <h1>Carrera Full Stack PHP Web Developer</h1>
+                        <p class="text-muted">2019 - 2020 <a
+                                href="https://alumni.education/profile/public/Kevin-Palacios-20875e9c"
+                                target="_blank">Perfil público</a> </p>
+                    </div>
+
+                    <div class="content">
+                        <h1>Programación Backend Con MERN Stack</h1>
+                        <p class="text-muted">2021 - En curso / Coderhouse</p>
+                    </div>
+                    <div class="content">
+                        <h1>Curso Intensivo Inglés</h1>
+                        <p class="text-muted">2020 - 2021 / UNC Facultad de lenguas</p>
+                    </div>
+
+                </div>
+            </div>
 
 
-    </section>
-    <section class="d-flex justify-content-center align-items-center">
+        </section>
 
-        <p><3 Thanks for watching!</p>
-    </section>
-</div>
+        <footer>
+            <article id="contact">
+                <h2>Contacto</h2>
+                <span> <strong>¿Interesado en mi perfil?</strong>, <span style="color: #FAD214;">Contactame</span> por
+                    alguno de estos dos medios</span>
+                <!-- <button type="button" class="btn btn-purple-outline m-4" style="float:right">Contactame </button> -->
+                <div class=" d-flex justify-content-center align-items-center">
+                    <a href="" class="social-icon">
+                        <img src="./resources/images/linkedin-icon.png" alt="">
+                    </a>
+                    <a href="" class="social-icon">
+                        <img style="width: 30px;" src="./resources/images/email-icon.png" alt="">
+                    </a>
+                </div>
+            </article>
+            <div class="d-flex justify-content-center align-items-center flex-column" style="padding-top: 210px;">
+                <span>Gracias por ver! 🥳</span>
+                <a href="" class="social-icon">
+                    <img style="width: 30px;" src="./resources/images/github-icon.png" alt="">
+                </a>
+                <span>Github</span>
+                <span class="mb-5 mt-5">Realizado a mano por mí © 2021</span>
 
+
+            </div>
+        </footer>
+
+
+    <!-- Modals -->
+    <div class="modal fade" id="juegoMemoriaModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+
+                    <span class="topic h1 mt-3 mb-5">Juego de memoria</span>
+                    <p class="text-muted"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque nihil incidunt
+                        quidem, atque recusandae deleniti. Animi dolores vel recusandae rem et voluptatum? Pariatur
+                        aliquam iste iusto voluptatibus mollitia unde nulla! </p>
+                </div>
+            </div>
+        </div>
+    </div>
 
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.6.4/lottie_svg.min.js"></script>
 <script src="resources/lottie.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script src="resources/app.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+    crossorigin="anonymous"></script>
+
 </html>

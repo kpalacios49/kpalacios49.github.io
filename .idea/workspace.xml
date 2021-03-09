@@ -20,9 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d0d7d8b1-8ae8-4ce7-9943-227c10a054e3" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/resources/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/app.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,7 +43,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/images" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../impulsarme" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -59,7 +59,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1608077829934</updated>
-      <workItem from="1608077831040" duration="4646000" />
+      <workItem from="1608077831040" duration="6942000" />
+      <workItem from="1608125437198" duration="920000" />
     </task>
     <servers />
   </component>
@@ -76,8 +77,13 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1608126362022">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1608126362022" />
     <state width="600" height="428" key="javadoc.popup" timestamp="1608082434070">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
