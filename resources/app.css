@@ -41,6 +41,9 @@
     .line::before {
         left: 15%;
     }
+    .proyect-card .meta {
+        margin: 10px;
+    }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -95,6 +98,9 @@
       }
       .line::before {
         left: 90px;
+    }
+    .proyect-card .meta {
+        margin: 10px 40px;
     }
 
 }
@@ -499,7 +505,6 @@ section{
     position: relative;
     z-index: 0;
     height: 200px;
-    margin: 10px 40px;
     border-radius: 50px;
     overflow: hidden;
 }
