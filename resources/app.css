@@ -5,7 +5,7 @@
         font-size: 2em;
     }
     section{
-        padding: 60px 5px;
+        padding: 60px 15px;
     }
     .btn-orange{
         margin: 10px;
@@ -19,9 +19,15 @@
     .topic{
         border-bottom:4px solid  #FAD214;
     }
+    .proyect-card {
+        flex-direction: column;
+    }
     .proyect-card .description .read-more {
         right: 0px;
         bottom: 0px;
+    }
+    .proyect-card .description {
+        padding-bottom: 30px!important;
     }
     
     #contact{
@@ -52,7 +58,7 @@
         font-size: 2em;
     }
     section{
-        padding: 60px 50px;
+        padding: 60px 10px;
     }
 
     .principal .shapes .shape-container:nth-child(1) .shape {
@@ -75,9 +81,26 @@
     .topic{
         border-bottom:4px solid  #FAD214;
     }
+    .proyect-card {
+        flex-direction: row;
+        max-width: 1000px;
+        height: 300px;
+    }
+    .proyect-card.alt {
+        flex-direction: row-reverse;
+    }
+
     .proyect-card .description .read-more {
         right: 10px;
         bottom: 10px;
+    }
+    .proyect-card .meta {
+        flex-basis: 30%;
+        height: auto;
+        margin: 10px;
+    }
+    .proyect-card .description {
+        flex-basis: 70%;
     }
     #contact{
         flex-direction: column;
@@ -99,9 +122,7 @@
       .line::before {
         left: 90px;
     }
-    .proyect-card .meta {
-        margin: 10px 40px;
-    }
+
 
 }
 
@@ -148,6 +169,16 @@
         right: 50px;
         bottom: 5px;
     }
+    .proyect-card .meta {
+        margin: 10px 40px;
+    }
+    .proyect-card .meta {
+        flex-basis: 40%;
+        height: auto;
+    }
+    .proyect-card .description {
+        flex-basis: 60%;
+    }
     #contact{
         flex-direction: row;
         padding: 60px 20px
@@ -156,6 +187,7 @@
         margin: auto;
         width: 200px;
     }
+    
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
@@ -479,7 +511,6 @@ section{
 
 .proyect-card {
     display: flex;
-    flex-direction: column;
     margin: 1rem auto;
     box-shadow: 0 3px 7px -1px rgba(0, 0, 0, 0.1);
     margin-bottom: 3%;
@@ -499,7 +530,7 @@ section{
     transform: scale(1.2) rotate(3deg);
 }
 .proyect-card:hover .description{
-    transform: scale(1.05);
+    transform: scale(1.02);
 }
 .proyect-card .meta {
     position: relative;
@@ -573,42 +604,6 @@ section{
 
 .proyect-card:hover .details {
     left: 0%;
-}
-@media (min-width: 640px) {
-    .proyect-card {
-        flex-direction: row;
-        max-width: 1000px;
-        height: 300px;
-    }
-    .proyect-card .meta {
-        flex-basis: 40%;
-        height: auto;
-    }
-    .proyect-card .description {
-        flex-basis: 60%;
-    }
-    .proyect-card .description:before {
-        /* transform: skewX(-3deg); */
-        content: "";
-        background: #fff;
-        width: 30px;
-        position: absolute;
-        left: -10px;
-        top: 0;
-        bottom: 0;
-        z-index: -1;
-    }
-    .proyect-card.alt {
-        flex-direction: row-reverse;
-    }
-    .proyect-card.alt .description:before {
-        left: inherit;
-        right: -10px;
-        transform: skew(3deg);
-    }
-    .proyect-card.alt .details {
-        padding-left: 25px;
-    }
 }
 
 
