@@ -50,6 +50,10 @@
     .proyect-card .meta {
         margin: 10px;
     }
+    .line .content:hover h1,   .line .content:hover p{
+        transform:translateX(15px) scale(1.1);
+        transition: .4s;
+      }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -122,6 +126,10 @@
       .line::before {
         left: 90px;
     }
+    .line .content:hover h1,   .line .content:hover p{
+        transform:translateX(60px) scale(1.2);
+        transition: .4s;
+      }
 
 
 }
@@ -187,6 +195,10 @@
         margin: auto;
         width: 200px;
     }
+    .line .content:hover h1,   .line .content:hover p{
+        transform:translateX(110px) scale(1.2);
+        transition: .4s;
+      }
     
 }
 
@@ -666,11 +678,7 @@ section{
     padding-left: 30px;
 
   }
-  .line .content:hover h1,   .line .content:hover p{
-    transform:translateX(100px) scale(1.2);
-    transition: .4s;
 
-  }
   .line .content + .content {
     margin-top: 40px;
   }
