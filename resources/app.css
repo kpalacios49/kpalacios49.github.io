@@ -5,7 +5,7 @@
         font-size: 2em;
     }
     section{
-        padding: 60px 15px;
+        padding: 30px 15px;
     }
     .btn-orange{
         margin: 10px;
@@ -667,10 +667,11 @@ section{
   
   .line::before {
     position: absolute;
-    width: 2px;
-    height: 100%;
-    background-color: #6969dc;
+    width: 3px;
+    height: 80%;
+    background-color: rgba(105, 105, 220, .3);
     content: "";
+    border-radius: 5px;
   }
   
   .line .content {
