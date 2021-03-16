@@ -23,7 +23,7 @@
         flex-direction: column;
     }
     .proyect-card .description .read-more {
-        right: 0px;
+        right: 20px;
         bottom: 0px;
     }
     .proyect-card .description {
@@ -54,6 +54,9 @@
         transform:translateX(15px) scale(1.1);
         transition: .4s;
       }
+      .principal #scrollDownContainer{
+        bottom: 60px;
+    }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -130,7 +133,9 @@
         transform:translateX(60px) scale(1.2);
         transition: .4s;
       }
-
+      .principal #scrollDownContainer{
+        bottom: 10px;
+    }
 
 }
 
@@ -307,7 +312,6 @@ hr{
 
 .principal #scrollDownContainer{
     position: absolute;
-    bottom: 10px;
     left: calc(50% - 25px);
     width: 50px;
     z-index: 10;
@@ -531,6 +535,7 @@ section{
     overflow: hidden;
     z-index: 0;
     cursor: pointer;
+    border-radius: 40px;
 }
 .proyect-card a {
     color: inherit;
