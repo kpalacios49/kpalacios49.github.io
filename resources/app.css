@@ -340,6 +340,49 @@ hr{
     bottom: -5%;
 }
 
+.principal-inverted{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    /* background: #6200EE; */
+    background: #5000D6;
+    color: white;
+    clip-path: circle(75%);
+
+    transition: clip-path 1.6s;
+}
+
+.hide-inverted{
+    clip-path: circle(0% at 100% 0);
+}
+
+.principal-inverted h1{
+    color: white
+}
+.principal-inverted .underline{
+    border-bottom: 5px solid #FCD230;
+}
+.principal-inverted .shape {
+    background: linear-gradient(45deg, #fff 0%, #fff 100%);
+    animation: morph-inverted 2s ease-in-out infinite;
+}
+
+
+.name-text{
+    background: rgb(250,210,20);
+    color: black;
+    padding: 10px 20px;
+    position: relative;
+    border-radius: 5px;
+    clip-path: circle(0.3% at 0 52%);
+    transition: clip-path .6s;
+}
+.name-text-show{
+    clip-path: circle(75%);
+}
+
+
 section{
     min-height:500px;
 }
@@ -355,7 +398,10 @@ section{
     /* background-color: #fad214; */
     /* background-color: 4px solid #6200EE; */
 
-    /* background-image: linear-gradient(to right, #fad214, #F4FA03); */
+    /* background-image: url('./images/bg.png'); */
+    /* background: #FAD214; */
+    /* background-image: linear-gradient(to left, rgba(252, 74, 26, 1), rgba(247, 183, 51, 1)); */
+    /* background-size: cover; */
 }
 #aboutme .image-download{
     width: 18px;
@@ -486,7 +532,6 @@ section{
   }
   .social-icon:hover img{
    filter: brightness(0) saturate(100%) invert(11%) sepia(70%) saturate(6184%) hue-rotate(267deg) brightness(106%) contrast(132%);
-
   }
   
   #contact{
@@ -660,7 +705,20 @@ section{
         background: linear-gradient(45deg, var(--primary) 0%, var(--secondary) 100%);
     }
 }
-
+@keyframes morph-inverted {
+    0% {
+        border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+        background: linear-gradient(45deg, #FCD230 0%, #FCD230 100%);
+    }
+    50% {
+        border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+        background: linear-gradient(45deg, #FCD230 0%, #FCD230 100%);
+    }
+    100% {
+        border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+        background: linear-gradient(45deg, #FCD230 0%, #FCD230 100%);
+    }
+}
 
 /* TimeLine */
 
