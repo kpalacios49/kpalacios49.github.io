@@ -33,7 +33,6 @@ window.onload = function () {
 
 
 };
-// clip-path: circle(2.8% at 5.2% 7.8%);
 
 document.body.addEventListener("click", (e) => {
     let header = document.querySelector("header");

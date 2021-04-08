@@ -22,10 +22,6 @@
     .proyect-card {
         flex-direction: column;
     }
-    .proyect-card .description .read-more {
-        right: 20px;
-        bottom: 0px;
-    }
     .proyect-card .description {
         padding-bottom: 30px!important;
     }
@@ -49,6 +45,8 @@
     }
     .proyect-card .meta {
         margin: 10px;
+        width: 100%;
+        height: 200px;
     }
     .line .content:hover h1,   .line .content:hover p{
         transform:translateX(15px) scale(1.1);
@@ -57,6 +55,17 @@
       .principal #scrollDownContainer{
         bottom: 60px;
     }
+    .modal .btn-close{
+        top: 10px;
+        right: 10px;
+    }
+    .dot-square{
+        background: url('./images/dot.png');
+        background-position: 0 0;
+        background-size: 10px 10px;
+        width: 50%;
+        height: 60px;
+      }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -96,15 +105,12 @@
     .proyect-card.alt {
         flex-direction: row-reverse;
     }
-
-    .proyect-card .description .read-more {
-        right: 10px;
-        bottom: 10px;
-    }
     .proyect-card .meta {
         flex-basis: 30%;
         height: auto;
         margin: 10px;
+        width: 100%;
+        height: 75%;
     }
     .proyect-card .description {
         flex-basis: 70%;
@@ -136,7 +142,17 @@
       .principal #scrollDownContainer{
         bottom: 10px;
     }
-
+    .modal .btn-close{
+        top: 30px;
+        right: 30px;
+    }
+    .dot-square{
+        background: url('./images/dot.png');
+        background-position: 0 0;
+        background-size: 15px 15px;
+        width: 300px;
+        height: 150px;
+      }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -178,16 +194,12 @@
     .proyect-card {
         border-radius: 50px;
     }
-    .proyect-card .description .read-more {
-        right: 50px;
-        bottom: 5px;
-    }
     .proyect-card .meta {
         margin: 10px 40px;
     }
     .proyect-card .meta {
         flex-basis: 40%;
-        height: auto;
+        /* height: auto; */
     }
     .proyect-card .description {
         flex-basis: 60%;
@@ -204,7 +216,13 @@
         transform:translateX(110px) scale(1.2);
         transition: .4s;
       }
-    
+      .dot-square{
+        background: url('./images/dot.png');
+        background-position: 0 0;
+        background-size: 20px 20px;
+        width: 400px;
+        height: 200px;
+      }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
@@ -341,7 +359,7 @@ hr{
 }
 
 .principal-inverted{
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     z-index: 10;
@@ -367,7 +385,16 @@ hr{
     background: linear-gradient(45deg, #fff 0%, #fff 100%);
     animation: morph-inverted 2s ease-in-out infinite;
 }
-
+.dot-square-principal{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    background: url('./images/dot.png');
+    background-position: 0 0;
+    background-size: 20px 20px;
+    width: 50%;
+    height: 200px;
+  }
 
 .name-text{
     background: rgb(250,210,20);
@@ -414,7 +441,7 @@ section{
 }
 .aboutme-text{
     font-size: 18px;
-    text-align: justify;
+    text-align: left;
 }
 
 .topic{
@@ -472,8 +499,6 @@ section{
 }
 .modal .btn-close{
     position: absolute;
-    top: 30px;
-    right: 30px;
 }
 .modal-content{
     border-radius: 20px;
@@ -573,7 +598,7 @@ section{
 .proyect-card {
     display: flex;
     margin: 1rem auto;
-    box-shadow: 0 3px 7px -1px rgba(0, 0, 0, 0.1);
+    /* box-shadow: 0 3px 7px -1px rgba(0, 0, 0, 0.1); */
     margin-bottom: 3%;
     background: #fff;
     line-height: 1.4;
@@ -581,6 +606,8 @@ section{
     z-index: 0;
     cursor: pointer;
     border-radius: 40px;
+    justify-content: center;
+    align-items: center;
 }
 .proyect-card a {
     color: inherit;
@@ -597,9 +624,10 @@ section{
 .proyect-card .meta {
     position: relative;
     z-index: 0;
-    height: 200px;
-    border-radius: 50px;
+    /* height: 75%; */
+    border-radius: 20px;
     overflow: hidden;
+
 }
 .proyect-card .photo {
     position: absolute;
@@ -634,28 +662,7 @@ section{
     color: #a2a2a2;
     margin-top: 5px;
 }
-.proyect-card .description .read-more {
-    position: absolute;
-}
-.proyect-card .description .read-more a {
-    color: #fad214;
-    display: inline-block;
-    position: relative;
-    font-size: 18px;
-    text-decoration: none;
 
-}
-.proyect-card .description .read-more a:after {
-    content: "😄";
-    margin-left: -10px;
-    opacity: 0;
-    vertical-align: middle;
-    transition: margin 0.3s, opacity 0.3s;
-}
-.proyect-card .description .read-more a:hover:after {
-    margin-left: 5px;
-    opacity: 1;
-}
 .proyect-card p {
     position: relative;
     margin: 1rem 0 0;
