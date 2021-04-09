@@ -778,3 +778,12 @@ section{
     left: -9px;
     border-radius: 50%;
   }
+
+
+
+  .photo-game-of-memory{
+    background-image: url('./images/juego-memoria.gif')
+  }
+  /* .photo-game-of-memory:hover{
+    background-image: url('./images/juego-memoria.gif')!important
+  } */
