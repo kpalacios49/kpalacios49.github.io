@@ -68,6 +68,16 @@
         width: 50%;
         height: 60px;
     }
+    #aboutme {
+        min-height: 700px;
+    }
+    #aboutme .arrow{
+        display: none;
+    }
+    #aboutme .aboutme-img {
+        right: 0;
+        width: 50%;
+    }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -154,6 +164,16 @@
         width: 300px;
         height: 150px;
     }
+    #aboutme {
+        min-height: 800px;
+    }
+    #aboutme .arrow{
+        display: none;
+    }
+    #aboutme .aboutme-img {
+        right: 0;
+        width: 50%;
+    }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -226,6 +246,15 @@
         width: 400px;
         height: 200px;
     }
+    #aboutme .arrow{
+        display: inline-block;
+        top: 2%;
+        left: -2%;
+    }
+    #aboutme .aboutme-img {
+        right: 200px;
+        width: 26%;
+    }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
@@ -239,7 +268,11 @@
         width: 300px;
     }
     #aboutme .aboutme-article{
-        padding: 0 200px;
+        padding: 0 18%;
+    }
+    #aboutme .arrow{
+        top: 2%;
+        left: 15%;
     }
 }
 
@@ -375,8 +408,10 @@ hr {
     left: 0;
     z-index: 10;
     /* background: #6200EE; */
-    background: #5000D6;
-    color: white;
+    /* background: #5000D6; */
+    background: #fff;
+
+    color: #17181C;
     clip-path: circle(75%);
     transition: clip-path 1.6s;
 }
@@ -386,7 +421,7 @@ hr {
 }
 
 .principal-inverted h1 {
-    color: white
+    /* color: white */
 }
 
 .principal-inverted .underline {
@@ -448,23 +483,35 @@ section {
 }
 
 #aboutme {
-    /*padding-top: 150px;*/
-    /*padding-bottom: 150px;*/
     background-color: #17181C;
     color: #fff;
-    min-height: 800px;
-    /* background-color: 4px solid #6200EE; */
-    /* background-image: url('./images/oreti.png'); */
-    /* background-image: url('./images/Waihou.png'); */
-    /* background: #FAD214; */
-    /* background-image: linear-gradient(to left, rgba(252, 74, 26, 1), rgba(247, 183, 51, 1)); */
-    /* background-size: cover; */
+}
+
+#aboutme .arrow{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border: 2px solid transparent;
+	border-color: white white transparent transparent;
+    border-radius: 0 100px 0 0;
+}
+#aboutme .arrow::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: -9px;
+    width: 20px;
+    height: 20px;
+    border: 3px solid transparent;
+    border-color: transparent white white transparent;
+    border-radius: 1px;
+    transform: rotate(35deg);
 }
 
 .aboutme-text {
     font-size: 16px;
     text-align: left;
-    width: 500px;
+    max-width: 500px;
 }
 
 #aboutme .image-download {
@@ -473,9 +520,7 @@ section {
 
 #aboutme .aboutme-img {
     position: absolute;
-    right: 200px;
-    top: 100px;
-    width: 30%;
+    top: 15%;
     object-fit: contain;
 }
 
@@ -805,7 +850,7 @@ footer div span:nth-child(1) {
 
 .line .content {
     position: relative;
-    padding-left: 30px;
+    padding-left: 40px;
 }
 
 .line .content+.content {
