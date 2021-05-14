@@ -1,106 +1,157 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/ico" href="./favicon.ico" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>PortFolio</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-    <link rel="stylesheet" href="resources/normalize.css">
-    <link rel="stylesheet" href="resources/app.css">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-</head>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
 
-<body id="touchsurface">
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="resources/normalize.css" />
+    <link rel="stylesheet" href="resources/app.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+
+  <body id="touchsurface">
     <header>
-        <div class="btn btn-orange rounded-circle p-2 " id="hamburguer"></div>
+      <div class="btn btn-orange rounded-circle p-2" id="hamburguer"></div>
 
-        <!-- <div>Español</div> -->
-        <nav class="disappear menu col-11 col-sm-11 col-md-6 col-lg-3" id="menu">
-            <ul>
-                <li><a href="#landing">Inicio</a></li>
-                <li><a href="#proyects">Proyectos</a></li>
-                <li><a href="#aboutme">Sobre mí</a></li>
-                <li><a href="#skills">Habilidades</a></li>
-                <li><a href="#contact">Contacto</a></li>
-            </ul>
-        </nav>
+      <!-- <div>Español</div> -->
+      <nav class="disappear menu col-11 col-sm-11 col-md-6 col-lg-3" id="menu">
+        <ul>
+          <li><a href="#landing">Inicio</a></li>
+          <li><a href="#proyects">Proyectos</a></li>
+          <li><a href="#aboutme">Sobre mí</a></li>
+          <li><a href="#skills">Habilidades</a></li>
+          <li><a href="#contact">Contacto</a></li>
+        </ul>
+      </nav>
     </header>
-    <section id="landing" class="principal d-flex justify-content-center align-items-center no-gutters">
-        <div class="col-12 p-2  principal-text">
-            <h4 data-aos="fade-right">Hola!, Soy Kevin.</h4>
-            <!-- <h1 data-aos="fade-right"><strong>Desarrollador <span class="underline">Web Full-Stack</span></strong></h1> -->
-            <h1 data-aos="fade-right"><strong>Desarrollador 
-                <span class="txt-rotate underline" data-period="2000"
-                data-rotate='[ "Full-Stack.", "Front-End.", "Back-End." ]'></span>
-            </strong></h1>
-
+    <section
+      id="landing"
+      class="
+        principal
+        d-flex
+        justify-content-center
+        align-items-center
+        no-gutters
+      "
+    >
+      <div class="col-12 p-2 principal-text">
+        <h4 data-aos="fade-right">Hola!, Soy Kevin.</h4>
+        <!-- <h1 data-aos="fade-right"><strong>Desarrollador <span class="underline">Web Full-Stack</span></strong></h1> -->
+        <h1 data-aos="fade-right">
+          <strong
+            >Desarrollador
+            <span
+              class="txt-rotate underline"
+              data-period="2000"
+              data-rotate='[ "Full-Stack.", "Front-End.", "Back-End." ]'
+            ></span>
+          </strong>
+        </h1>
+      </div>
+      <a href="#proyects" id="scrollDownContainer">
+        <div class="mt-5" id="scrollDown"></div>
+      </a>
+      <div class="shapes">
+        <div class="shape-container">
+          <div class="shape"></div>
         </div>
-        <a href="#proyects" id="scrollDownContainer">
-            <div class="mt-5" id="scrollDown"></div>
-        </a>
-        <div class="shapes">
-            <div class="shape-container">
-                <div class="shape"></div>
-            </div>
-        </div>
+      </div>
     </section>
-    <section class="principal principal-inverted d-flex justify-content-center align-items-center no-gutters ">
-        <div class="col-12 p-2  principal-text">
+    <section
+      class="
+        principal principal-inverted
+        d-flex
+        justify-content-center
+        align-items-center
+        no-gutters
+      "
+    >
+      <div class="col-12 p-2 principal-text">
+        <h4 data-aos="fade-right">
+          Hola!, <span class="name-text">Soy Kevin.</span>
+        </h4>
 
-            <h4 data-aos="fade-right">Hola!, <span class="name-text">Soy Kevin.</span> </h4>
-
-            <!-- <h1 data-aos="fade-right"><strong>Desarrollador</strong></h1> -->
-            <!-- <h1 class="display-3" data-aos="fade-right"><strong>Bienvenido! </strong></h1> -->
+        <!-- <h1 data-aos="fade-right"><strong>Desarrollador</strong></h1> -->
+        <!-- <h1 class="display-3" data-aos="fade-right"><strong>Bienvenido! </strong></h1> -->
+      </div>
+      <a href="#proyects" id="scrollDownContainer">
+        <div class="mt-5" id="scrollDown"></div>
+      </a>
+      <div class="shapes">
+        <div class="shape-container">
+          <div class="shape"></div>
         </div>
-        <a href="#proyects" id="scrollDownContainer">
-            <div class="mt-5" id="scrollDown"></div>
-        </a>
-        <div class="shapes">
-            <div class="shape-container">
-                <div class="shape"></div>
-            </div>
-        </div>
-        <div class="dot-square-principal" style="filter: invert(1)"></div>
-        <div class="dot-line-principal" style="filter: invert(1)"></div>
-
+      </div>
+      <div class="dot-square-principal" style="filter: invert(1)"></div>
+      <div class="dot-line-principal" style="filter: invert(1)"></div>
     </section>
     <div class="dots dot-square"></div>
 
     <section id="proyects">
-
-        <span class="h1 mx-4 my-0 mt-5 my-md-5 topic project-topic">Proyectos</span>
-        <div class="card-container ">
-
-            <div class="proyect-card" data-aos="fade-right" data-bs-toggle="modal" data-bs-target="#juegoMemoriaModal">
-                <div class="meta">
-                    <div class="photo photo-game-of-memory">
-                    </div>
-                </div>
-                <div class="description">
-                    <h1><strong>Juego De Memoria</strong></h1>
-                    <h2 class="mt-3">Caso de estudio</h2>
-                    <p class="my-3 mb-0"> Clasico juego de memoria que consta de un tablero donde todas las cartas estan
-                        dadas vuelta, el rol del jugador es
-                        ir eligiendo cartas y combinar aquellas cartas que son iguales en la menor cantidad de intentos
-                        posible.
-                    </p>
-                    <div class="d-flex align-items-center">
-                        <div class="skill-img">
-                            <img height="35" src="./resources/images/react-icon.png" alt="">
-                        </div>
-                        <div class="skill-img">
-                            <img height="30" src="./resources/images/firebase-icon.png" alt="">
-                        </div>
-                    </div>
-                </div>
+      <span class="h1 mx-4 my-0 mt-5 my-md-5 topic project-topic"
+        >Proyectos</span
+      >
+      <div class="card-container">
+        <div
+          class="proyect-card"
+          data-aos="fade-right"
+          data-bs-toggle="modal"
+          data-bs-target="#juegoMemoriaModal"
+        >
+          <div class="meta">
+            <div class="photo photo-game-of-memory"></div>
+          </div>
+          <div class="description">
+            <h1><strong>Juego De Memoria</strong></h1>
+            <h2 class="mt-3">Caso de estudio</h2>
+            <p class="my-3 mb-0">
+              Clasico juego de memoria que consta de un tablero donde todas las
+              cartas estan dadas vuelta, el rol del jugador es ir eligiendo
+              cartas y combinar aquellas cartas que son iguales en la menor
+              cantidad de intentos posible.
+            </p>
+            <div class="d-flex align-items-center">
+              <div class="skill-img">
+                <img
+                  height="35"
+                  src="./resources/images/react-icon.png"
+                  alt=""
+                />
+              </div>
+              <div class="skill-img">
+                <img
+                  height="30"
+                  src="./resources/images/firebase-icon.png"
+                  alt=""
+                />
+              </div>
             </div>
+          </div>
         </div>
-        <!-- <div class="card-container">
+      </div>
+      <!-- <div class="card-container">
 
             <div class="proyect-card" data-aos="fade-right" data-bs-toggle="modal" data-bs-target="#juegoMemoriaModal">
                 <div class="meta">
@@ -128,161 +179,233 @@
             </div>
         </div> -->
     </section>
-    <section id="aboutme" data-aos="fade-up">
-        <div class="row">
-            <div class="col-12 col-md-6  order-2 order-md-1">
-                <h2 class="h1 m-4 text-center text-md-left topic aboutme-topic">Sobre mí 😄</h2>
-                <div class="mt-4 p-4 aboutme-text">
-                    Hola!, tengo 23 años, soy estudiante de Ingeniería en sistemas, apasionado por la programación con más de 2 años de
-                    experiencia en el sector desarrollando aplicaciones web para una empresa, busco constantemente mi
-                    crecimiento profesional y nuevos desafíos, adaptándome a las nuevas tecnologías que demanda el
-                    mercado con una gran habilidad para el trabajo en equipo desenvolviéndome en un entorno orientado a
-                    resultados.
-                </div>
-                <!-- <button type="button" class="btn btn-purple m-4" style="float:right">Descargá mi CV </button> -->
-            </div>
-            <div class="col-12 col-md-6 order-1 order-md-2 d-flex justify-content-center align-items-center">
-                <div style="position: relative">
-                    <div class="aboutme-img">
-                        <img src="./resources/images/foto.jpg" alt="foto_perfil">
-                    </div>
-                </div>
-            </div>
+    <section id="aboutme" data-aos="fade-up" class="position-relative">
+        <div class="dot-line" style="filter: invert(1)"></div>
+
+      <article class="position-relative aboutme-article" style="z-index: 10">
+
+        <h2 class="h1 m-4 text-md-left aboutme-title">Hola!</h2>
+        <h2 class="h1 m-4 text-md-left aboutme-title">
+          <span>Soy Kevin Palacios,</span>
+          <br />
+          <span>un curioso </span>
+          <span class="color-primary">desarrollador Full-stack</span>
+          <br />
+          <span>viviendo en Argentina</span>
+        </h2>
+
+        <div class="mt-4 p-4 aboutme-text">
+          Soy estudiante de Ingeniería en sistemas, apasionado por la
+          programación con más de 2 años de experiencia en el sector
+          desarrollando aplicaciones web para una empresa, busco constantemente
+          mi crecimiento profesional y nuevos desafíos, adaptándome a las nuevas
+          tecnologías que demanda el mercado con una gran habilidad para el
+          trabajo en equipo desenvolviéndome en un entorno orientado a
+          resultados.
         </div>
+      </article>
+
+      <!-- <button type="button" class="btn btn-purple m-4" style="float:right">Descargá mi CV </button> -->
+      <div class="aboutme-img" data-aos="fade-left">
+        <img src="./resources/images/prueba.jpg" alt="prueba" />
+      </div>
+
+
     </section>
 
     <section id="skills" data-aos="zoom-in-up">
-        <h2 class="h1 topic skills-topic  my-5 mt-5 my-md-5" style="margin-bottom: 80px;">Habilidades</h2>
-        <br>
-        <div class="d-flex flex-wrap justify-content-center align-items-center my-md-5">
-
-            <div class="skill-img px-1 px-2" data-aos="zoom-in" data-aos-duration="300">
-                <img height="70" src="./resources/images/react-icon.png" alt="">
-            </div>
-            <!-- <div class="skill-img px-1">
+      <h2
+        class="h1 topic skills-topic my-5 mt-5 my-md-5"
+        style="margin-bottom: 80px"
+      >
+        Mis Habilidades
+      </h2>
+      <br />
+      <div
+        class="
+          d-flex
+          flex-wrap
+          justify-content-center
+          align-items-center
+          my-md-5
+        "
+      >
+        <div
+          class="skill-img px-1 px-2"
+          data-aos="zoom-in"
+          data-aos-duration="300"
+        >
+          <img height="70" src="./resources/images/react-icon.png" alt="" />
+        </div>
+        <!-- <div class="skill-img px-1">
                 <img class="img-icon" src="./resources/images/redux-icon.png" alt="">
             </div> -->
-            <div class="skill-img px-1" data-aos="zoom-in" data-aos-duration="500">
-                <img height="50" src="./resources/images/nodejs-icon.svg" alt="">
-            </div>
-            <!-- <div class="skill-img px-1">
+        <div class="skill-img px-1" data-aos="zoom-in" data-aos-duration="500">
+          <img height="50" src="./resources/images/nodejs-icon.svg" alt="" />
+        </div>
+        <!-- <div class="skill-img px-1">
                 <img class="img-icon" src="./resources/images/express-icon.png" alt="">
             </div> -->
-            <div class="skill-img px-0" data-aos="zoom-in" data-aos-duration="700">
-                <img height="75" src="./resources/images/laravel-icon.png" alt="">
-            </div>
-            <!-- <div class="skill-img px-1">
+        <div class="skill-img px-0" data-aos="zoom-in" data-aos-duration="700">
+          <img height="75" src="./resources/images/laravel-icon.png" alt="" />
+        </div>
+        <!-- <div class="skill-img px-1">
             <img class="img-icon" src="./resources/images/livewire-icon.png" alt="">
         </div> -->
-            <div class="skill-img px-1" data-aos="zoom-in" data-aos-duration="900">
-                <img class="img-icon" style="height: 65px" src="./resources/images/git-icon.png" alt="">
-            </div>
-            <div class="skill-img px-2" data-aos="zoom-in" data-aos-duration="1100">
-                <img class="img-icon" src="./resources/images/php-icon.png" alt="">
-            </div>
-            <div class="skill-img px-1" data-aos="zoom-in" data-aos-duration="1300">
-                <img class="img-icon" style="height: 70px" src="./resources/images/sql-icon.png" alt="">
-            </div>
-            <div class="skill-img px-1" data-aos="zoom-in" data-aos-duration="1500">
-                <img class="img-icon" src="./resources/images/mysql-icon.png" alt="">
-            </div>
-            <div class="skill-img px-1" data-aos="zoom-in" data-aos-duration="1700">
-                <img class="img-icon" src="./resources/images/web-icon.jpg" alt="">
-            </div>
-            <!-- <div class="skill-img px-1">
+        <div class="skill-img px-1" data-aos="zoom-in" data-aos-duration="900">
+          <img
+            class="img-icon"
+            style="height: 65px"
+            src="./resources/images/git-icon.png"
+            alt=""
+          />
+        </div>
+        <div class="skill-img px-2" data-aos="zoom-in" data-aos-duration="1100">
+          <img class="img-icon" src="./resources/images/php-icon.png" alt="" />
+        </div>
+        <div class="skill-img px-1" data-aos="zoom-in" data-aos-duration="1300">
+          <img
+            class="img-icon"
+            style="height: 70px"
+            src="./resources/images/sql-icon.png"
+            alt=""
+          />
+        </div>
+        <div class="skill-img px-1" data-aos="zoom-in" data-aos-duration="1500">
+          <img
+            class="img-icon"
+            src="./resources/images/mysql-icon.png"
+            alt=""
+          />
+        </div>
+        <div class="skill-img px-1" data-aos="zoom-in" data-aos-duration="1700">
+          <img class="img-icon" src="./resources/images/web-icon.jpg" alt="" />
+        </div>
+        <!-- <div class="skill-img px-1">
             <img  class="img-icon" style="height: 70px" src="./resources/images/github-icon.png" alt="">
         </div> -->
-        </div>
-
+      </div>
     </section>
     <!-- <hr> -->
 
     <section id="training pb-0" data-aos="zoom-in">
-        <h2 class="h1 m-4 topic training-topic">Educación</h2>
+      <h2 class="h1 m-4 topic training-topic">Educación</h2>
 
-        <div class="line">
-            <div class="line-content">
+      <div class="line">
+        <div class="line-content">
+          <div class="content" data-aos="zoom-in" data-aos-duration="600">
+            <h1>Ingeniería En Sistemas De Información</h1>
+            <p class="text-muted">
+              2016 - En curso / Universidad Tecnologica Nacional
+            </p>
+          </div>
 
-                <div class="content" data-aos="zoom-in" data-aos-duration="600">
-                    <h1>Ingeniería En Sistemas De Información</h1>
-                    <p class="text-muted">2016 - En curso / Universidad Tecnologica Nacional</p>
-                </div>
+          <div class="content" data-aos="zoom-in" data-aos-duration="900">
+            <h1>Carrera Full Stack PHP Web Developer</h1>
+            <p class="text-muted">
+              2019 - 2020
+              <a
+                href="https://alumni.education/profile/public/Kevin-Palacios-20875e9c"
+                target="_blank"
+                >Perfil público</a
+              >
+            </p>
+          </div>
 
-                <div class="content" data-aos="zoom-in" data-aos-duration="900">
-                    <h1>Carrera Full Stack PHP Web Developer</h1>
-                    <p class="text-muted">2019 - 2020 <a
-                            href="https://alumni.education/profile/public/Kevin-Palacios-20875e9c"
-                            target="_blank">Perfil público</a> </p>
-                </div>
-
-                <div class="content" data-aos="zoom-in" data-aos-duration="1200">
-                    <h1>Programación Backend Con MERN Stack</h1>
-                    <p class="text-muted">2021 - En curso / Coderhouse</p>
-                </div>
-                <div class="content" data-aos="zoom-in" data-aos-duration="1500">
-                    <h1>Curso Intensivo Inglés</h1>
-                    <p class="text-muted">2020 - 2021 / UNC Facultad de lenguas</p>
-                </div>
-
-            </div>
+          <div class="content" data-aos="zoom-in" data-aos-duration="1200">
+            <h1>Programación Backend Con MERN Stack</h1>
+            <p class="text-muted">2021 - En curso / Coderhouse</p>
+          </div>
+          <div class="content" data-aos="zoom-in" data-aos-duration="1500">
+            <h1>Curso Intensivo Inglés</h1>
+            <p class="text-muted">2020 - 2021 / UNC Facultad de lenguas</p>
+          </div>
         </div>
-
-
+      </div>
     </section>
 
     <footer>
-        <article id="contact" data-aos="flip-up">
-            <h2>Contacto</h2>
-            <span> <strong>¿Interesado en mi perfil?</strong>, <span style="color: #FAD214;">Contactame</span> por
-                alguno de estos dos medios</span>
-            <!-- <button type="button" class="btn btn-purple-outline m-4" style="float:right">Contactame </button> -->
-            <div class=" d-flex justify-content-center align-items-center">
-                <a href="https://www.linkedin.com/in/kevin-carlos-palacios-859276150/" class="social-icon">
-                    <img src="./resources/images/linkedin-icon.png" alt="">
-                </a>
-                <!-- <a href="" class="social-icon"> -->
-                    <!-- <p>Mail</p> -->
-                    <!-- <img style="width: 30px;" src="./resources/images/email-icon.png" alt=""> -->
-                <!-- </a> -->
-            </div>
-        </article>
-        <div class="d-flex justify-content-center align-items-center flex-column" style="padding-top: 210px;">
-            <span>Gracias por tu tiempo! 🥳</span>
-            <a href="" class="social-icon">
-                <img style="width: 30px;" src="./resources/images/github-icon.png" alt="">
-            </a>
-            <span>Github</span>
-            <span class="mb-5 mt-5">Hecho con ❤️ por mi © 2021</span>
-
-
+      <article id="contact" data-aos="flip-up">
+        <h2>Contacto</h2>
+        <span>
+          <strong>¿Interesado en mi perfil?</strong>,
+          <span style="color: #fad214">Contactame</span> por alguno de estos dos
+          medios</span
+        >
+        <!-- <button type="button" class="btn btn-purple-outline m-4" style="float:right">Contactame </button> -->
+        <div class="d-flex justify-content-center align-items-center">
+          <a
+            href="https://www.linkedin.com/in/kevin-carlos-palacios-859276150/"
+            class="social-icon"
+          >
+            <img src="./resources/images/linkedin-icon.png" alt="" />
+          </a>
+          <!-- <a href="" class="social-icon"> -->
+          <!-- <p>Mail</p> -->
+          <!-- <img style="width: 30px;" src="./resources/images/email-icon.png" alt=""> -->
+          <!-- </a> -->
         </div>
+      </article>
+      <div
+        class="d-flex justify-content-center align-items-center flex-column"
+        style="padding-top: 210px"
+      >
+        <span>Gracias por tu tiempo! 🥳</span>
+        <a href="" class="social-icon">
+          <img
+            style="width: 30px"
+            src="./resources/images/github-icon.png"
+            alt=""
+          />
+        </a>
+        <span>Github</span>
+        <span class="mb-5 mt-5">Hecho con ❤️ por mi © 2021</span>
+      </div>
     </footer>
 
-
     <!-- Modals -->
-    <div class="modal fade" id="juegoMemoriaModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-xl">
-            <div class="modal-content">
-                <div class="modal-body">
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    <div
+      class="modal fade"
+      id="juegoMemoriaModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+          <div class="modal-body">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
 
-                    <span class="topic h1 mt-4 mb-5">Juego de memoria</span>
-                    <p class="text-muted"> Enlace del juego: <a href="">Juego de memoria</a> </p>
-                    <p class="text-muted"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque nihil incidunt
-                        quidem, atque recusandae deleniti. Animi dolores vel recusandae rem et voluptatum? Pariatur
-                        aliquam iste iusto voluptatibus mollitia unde nulla! </p>
-                </div>
-            </div>
+            <span class="topic h1 mt-4 mb-5">Juego de memoria</span>
+            <p class="text-muted">
+              Enlace del juego:
+              <a href="https://kevin499.github.io/Juego-de-memoria-con-ReactJS/"
+                >Juego de memoria</a
+              >
+            </p>
+            <p class="text-muted">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque
+              nihil incidunt quidem, atque recusandae deleniti. Animi dolores
+              vel recusandae rem et voluptatum? Pariatur aliquam iste iusto
+              voluptatibus mollitia unde nulla!
+            </p>
+          </div>
         </div>
+      </div>
     </div>
-
-</body>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.6.4/lottie_svg.min.js"></script>
-<script src="resources/lottie.js"></script>
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script src="resources/app.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+  </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.6.4/lottie_svg.min.js"></script>
+  <script src="resources/lottie.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="resources/app.js"></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
-    crossorigin="anonymous"></script>
-
+    crossorigin="anonymous"
+  ></script>
 </html>
