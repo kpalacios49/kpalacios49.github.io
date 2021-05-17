@@ -524,7 +524,40 @@ section {
     object-fit: contain;
 }
 
+#experience{
+    /* border: 1px solid red; */
+}
+#experience .experience-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#experience .experience-card{
+    position: relative;
+    width: 50%;
+    /* height: 200px; */
+    background: rgba(0, 0, 0, .4);
+    aspect-ratio: 4 / 2;
+    color: white;
+    padding: 20px 5%;
+    margin: 10px 0;
+    overflow: hidden;
+}
 
+#experience .experience-card img{
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    min-height: 100%;
+    z-index: -1;
+    background-image: url('https://assets.digitalocean.com/labs/images/community_bg.png');
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-size: cover;
+}
 
 .topic {
     position: relative;
