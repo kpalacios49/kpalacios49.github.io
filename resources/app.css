@@ -536,13 +536,13 @@ section {
 #experience .experience-card{
     position: relative;
     width: 50%;
-    /* height: 200px; */
-    background: rgba(0, 0, 0, .4);
+    background: rgb(0, 0, 0);
     aspect-ratio: 4 / 2;
     color: white;
     padding: 20px 5%;
     margin: 10px 0;
     overflow: hidden;
+    border-radius: 8px;
 }
 
 #experience .experience-card img{
@@ -557,6 +557,11 @@ section {
     background-repeat: no-repeat;
     background-position: 50% 0;
     background-size: cover;
+    transition: .4s;
+}
+
+#experience .experience-card:hover img{
+    opacity: 0.4;
 }
 
 .topic {
